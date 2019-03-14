@@ -68,10 +68,8 @@ $(document).ready(function () {
     $(".search").on("click", function(event){
         event.preventDefault();
         var term = $(".search-field").val();
-        topics.push(terms);
+        topics.push(term);
+        $(".search-field").val("");
         renderButtons();
     })
-
-
-
 })
